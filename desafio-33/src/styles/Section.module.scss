@@ -1,0 +1,43 @@
+.sectionBackground {
+  background: var(--dark-color);
+  .sectionContent {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    & h1 {
+      color: var(--white-color);
+      margin-bottom: 24px;
+      font-size: 3rem;
+      font-weight: 600;
+    }
+    & p {
+      color: var(--white-200-color);
+      font-size: 1.2rem;
+      max-width: 75ch;
+    }
+  }
+}
+
+.subSection {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  & li {
+    padding: 4.375rem;
+    text-align: center;
+    color: var(--white-color);
+    font-size: 1.125rem;
+  }
+  & li:nth-child(1) {
+    background-color: var(--dark-200-color);
+  }
+  & li:nth-child(2) {
+    background-color: var(--red-color);
+  }
+  & li:nth-child(3) {
+    background-color: var(--purple-color);
+  }
+}

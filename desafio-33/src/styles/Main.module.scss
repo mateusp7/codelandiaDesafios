@@ -1,0 +1,34 @@
+.mainContent {
+  padding: 60px 0px;
+  text-align: center;
+  & h1 {
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+}
+
+.contentImages {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  & li {
+    background: var(--white-200-color);
+    border-radius: 4px;
+    padding: 55px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    transition: .3s ease-in-out;
+    &:hover {
+      scale: 1.05;
+    }
+  }
+  & p {
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+}

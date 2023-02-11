@@ -1,0 +1,19 @@
+:root {
+  --red-color: #B91C1C;
+  --dark-200-color: #353436;
+  --white-color: #FFFFFF;
+  --dark-color: #111827;
+  --white-200-color: #F3F4F6;
+  --purple-color: #481A8F;
+}
+
+.max-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+a {
+  display: block;
+  max-width: max-content
+}

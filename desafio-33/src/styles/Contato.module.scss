@@ -1,0 +1,49 @@
+.containerGeral {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  .leftContainer {
+    padding: 220px 0px;
+    background: var(--red-color);
+    text-align: center;
+    & h1 {
+      color: var(--white-color);
+      font-size: 2rem;
+      margin-top: 50px;
+    }
+  }
+  .rightContainer {
+    padding: 56px;
+    background: var(--white-200-color);
+    .listVagas {
+      display: flex;
+      flex-direction: column;
+      gap: 70px;
+      & h1 {
+        color: var(--dark-color);
+        font-weight: 600;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+      }
+      & span {
+        color: var(--dark-200-color);
+        font-size: 1.125rem;
+      }
+      & a {
+        margin-top: 0.8rem;
+        color: var(--red-color);
+        font-size: 1.125rem;
+        font-weight: 500;
+        position: relative;
+        &::after {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 2px;
+          background: var(--red-color);
+        }
+      }
+    }
+  }
+}

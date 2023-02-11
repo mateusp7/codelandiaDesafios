@@ -1,0 +1,29 @@
+.headerBackground {
+  background: var(--white-color);
+  padding: 24px 0px;
+  .containerHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .nav, .navRedes  {
+      display: flex;
+      align-items: center;
+    }
+    .nav {
+      gap: 56px;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+    .nav li:nth-child(1) {
+      font-weight: 600;
+      color: var(--red-color);
+    }
+    .navRedes {
+      gap: 48px;
+      & div {
+        cursor: pointer;
+      }
+    }
+  }
+}
